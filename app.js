@@ -4,6 +4,9 @@ import gsdRoutes from './src/routes/gsd.js';
 import swaggerUI from 'swagger-ui-express';
 import {swaggerSpec} from './swagger.js';
 import logger from './src/logger/index.js';
+// FIXME: env setup is not regulated without util fake import
+import utils from './utils.js';
+
 
 
 const app = new express();
